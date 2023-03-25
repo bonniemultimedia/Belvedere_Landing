@@ -6,6 +6,8 @@
     <title>Belvedere Web</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <meta name="author" content="Bonnie">
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -55,14 +57,14 @@
                     <h1 class="belvedere-title espacio_titulo text-center">BELVEDERE</h1>
                     <h2 class="belvedere-subtitle text-center">barrio abierto</h2>
                     <p class="header-text text-center m_t_5 m_b_5">Ese lugar en el mundo que siempre buscaste, lo tenés ahora.</p>
-                    <button class="btn_home_video" data-bs-toggle="modal" data-bs-target="#VideoModal" data-bs-whatever="@mdo"><i class="bi bi-chevron-left"></i></button>
+                    <button class="btn_home_video" data-bs-toggle="modal" data-bs-target="#VideoModal" data-bs-whatever="@mdo"><i class="bi bi-play-fill" id=""></i></button>                
                 </div>
             </div>  
         </section> 
         <!-- Home End -->
 
         <!-- Modal -->
-        <div class="modal fade" id="VideoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade wow fadeIn" id="VideoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog posicion-c-c-c-c">
               <div class="modal_cont">
                 <div class="modal-header">
@@ -88,7 +90,7 @@
                 </div>
 
                 <!-- Carousel Start -->
-                <div class="owl-carousel belvedere-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="owl-carousel belvedere-carousel wow fadeIn" data-wow-delay="0.2s">
                     <div class="carousel-urbanizacion-item" id="carousel_1">     
                     </div>
 
@@ -110,71 +112,38 @@
                     <p class="belvedere-text m_b_3">Belvedere combina todos los servicios e infraestructura de ciudad con un entorno seguro y tranquilo.</p>
                 </div>
 
-                <!-- FILA UNO -->
-                <div class="row m_b_3">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_red_agua">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text ">Red de agua</h4>
+                <!-- Carousel Servicios Start -->
+                <div class="owl-carousel belvedere-carousel-servicios wow fadeIn" data-wow-delay="0.2s">
+                    <div class="carousel-servicios-item" id="servicios_imagen_red_agua">     
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_luz_bm_tension">
-                            
-                        </div>           
-                        <h4 class="text-center servicios-text ">Red de luz baja y media tensión</h4>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_gas_natural">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text">Red de gas natural</h4>
-                    </div> 
-                </div>
 
-                <!-- FILA DOS -->
-                <div class="row m_b_3">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_dba">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text ">Boulevard principal adoquinado</h4>
+                    <div class="carousel-servicios-item" id="servicios_imagen_luz_bm_tension">     
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_calles_mejorado">
-                            
-                        </div>           
-                        <h4 class="text-center servicios-text ">Calles con mejorado</h4>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_gas_natural">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text">Red de gas natural</h4>
-                    </div> 
-                </div>           
 
-                <!-- FILA TRES -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_red_agua">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text ">Red de agua</h4>
+                    <div class="carousel-servicios-item" id="servicios_imagen_gas_natural">     
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_luz_bm_tension">
-                            
-                        </div>           
-                        <h4 class="text-center servicios-text ">Red de luz baja y media tensión</h4>
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_dba">     
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="servicios-imagen-cont" id="servicios_imagen_gas_natural">
-                            
-                        </div>
-                        <h4 class="text-center servicios-text">Red de gas natural</h4>
-                    </div> 
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_calles_mejorado">     
+                    </div>
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_cordon_cuneta">     
+                    </div>
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_bicisendas">     
+                    </div>
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_sendas_peatonales">     
+                    </div>
+
+                    <div class="carousel-servicios-item" id="servicios_imagen_Alumbrado_Público">     
+                    </div>
+
                 </div>
+                <!-- Carousel Servicios End -->
+
 
             </div>
         
@@ -195,12 +164,12 @@
         <!-- Posesion End -->
         
            <!-- Ubicacion Start -->
-        <div class="container-xxl wow fadeIn section_padding m_t_5" id="ubicacion" data-wow-delay="0.1s">
+        <div class="container-xxl wow fadeIn section_padding m_t_5 posicion-c-c-c-c" id="ubicacion" data-wow-delay="0.1s">
             <div class="container ">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="padding: 0px;">
+                <div class="row align-items-center" id="contenedor_bonnie_ubicacion">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="padding: 0px">
                         <div id="map_cont_bonnie">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.94192251215!2d-60.73343848511262!3d-32.82030377283315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65052f429a3a9%3A0xc0dd675ec453063f!2s%C3%81ngel%20Marino%20Gervaso%20550%2C%20S2154DMQ%20Cap.%20Berm%C3%BAdez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1676642813092!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.94192251215!2d-60.73343848511262!3d-32.82030377283315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65052f429a3a9%3A0xc0dd675ec453063f!2s%C3%81ngel%20Marino%20Gervaso%20550%2C%20S2154DMQ%20Cap.%20Berm%C3%BAdez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1676642813092!5m2!1ses!2sar"  height="480" width = "100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="padding: 0px;">
@@ -215,6 +184,7 @@
         </div>
         <!-- Ubicacion End -->
 
+
         <!-- Footer Start -->
         <footer class="container-fluid footer wow fadeIn section_padding m_t_5" data-wow-delay="0.1s" id="contacto">
             <div class="container">
@@ -222,9 +192,9 @@
                     <div class="col-lg-12 text-center align-self-center p_b_12">
                         <img src="img/logo_footer.svg" alt="Logo Contacto" class="p_b_3">
                         <div class="d-flex justify-content-center">
-                            <a class="btn-social-bonnie" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn-social-bonnie" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn-social-bonnie" href=""><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn-social-bonnie" href="https://www.facebook.com/barrioabiertobelvedere" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-social-bonnie" href="https://www.instagram.com/barriobelvedere/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn-social-bonnie" href="https://wa.me/543413428238?text=%C2%A1Hola!%20Quisiera%20m%C3%A1s%20info%20sobre%20el%20Barrio."><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +208,7 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="copy_text">
-                                <p> Desarrollo por <a href="">Bonnie Multimedia </a>para  <a href="">Selva&co</a>
+                                <p> Desarrollo por <a href="mailto:bonnie.multimedia@gmail.com?Subject=Belvedere_Web:">Bonnie Multimedia </a>para  <a href="">Selva&co</a>
                                 </p>                               
                             </div>
                         </div>

@@ -277,11 +277,16 @@ body{
     background-size: contain; 
 }
 .btn_home_video{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: var(--primary);
     border-radius: 180px;
     border: none;
+    color: var(--light);
+    transition: .5s;
+}
+.btn_home_video .bi-play-fill{
+    font-size: 26px;
 }
 /*MODAL*/
 #VideoModal .modal-dialog{
@@ -307,6 +312,8 @@ body{
 }
 #carousel_2{
     background-image: url("../img/img_urbanizacion_carouel_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .carousel-urbanizacion-item{
     height: 462px;
@@ -314,22 +321,22 @@ body{
     border-radius: 20px;
     margin: 0 auto;
 }
-.belvedere-carousel .owl-nav {
+.owl-nav {
     display: flex;
     justify-content: center;
 }
-.belvedere-carousel .owl-nav .owl-prev,
-.belvedere-carousel .owl-nav .owl-next {
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
     margin: 0 12px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--light);
     background: var(--primary);
     border-radius: 60px;
-    font-size: 22px;
+    font-size: 18px;
     transition: .5s;
 }
 .belvedere-carousel .owl-nav .owl-prev:hover,
@@ -358,24 +365,54 @@ body{
     border-radius: 10px;
     transition: .5s;
 }
+.carousel-servicios-item{
+    height: 462px;
+    width: 100%;
+    height: 233.61px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 /**Imagenes Servicios***/
 .servicios-imagen-cont{
     margin-bottom: 20px;
 }
+
 #servicios_imagen_red_agua{
     background-image: url("../img/servicios_red_agua.jpg");
+    background-size: cover;
+    background-position: center;
 }
 #servicios_imagen_luz_bm_tension{
     background-image: url("../img/servicios_luz_baja_media_tension.jpg");
+    background-size: cover;
 }
 #servicios_imagen_gas_natural{
     background-image: url("../img/servicios_red_gas.jpg");
+    background-size: cover;
 }
 #servicios_imagen_dba{
     background-image: url("../img/Boulevard_principal_adoquinado.jpg");
+    background-size: cover;
 }
 #servicios_imagen_calles_mejorado{
     background-image: url("../img/Calles_con_mejorado.jpg");
+    background-size: cover;
+}
+#servicios_imagen_cordon_cuneta{
+    background-image: url("../img/cordon_cuneta.jpg");
+    background-size: cover; 
+}
+#servicios_imagen_bicisendas{
+    background-image: url("../img/bicisendas.jpg");
+    background-size: cover; 
+}
+#servicios_imagen_sendas_peatonales{
+    background-image: url("../img/Sendas_peatonales.jpg");
+    background-size: cover; 
+}
+#servicios_imagen_Alumbrado_Público{
+    background-image: url("../img/Alumbrado_Público.jpg");
+    background-size: cover; 
 }
 /**POSESION**/
 #posesion_cont{
@@ -384,17 +421,20 @@ body{
 }
 /*UBICACION*/
 #map_cont_bonnie{
-    width: 100%;
+    height: 100%;
 }
 #ubicacion_right_cont{
     width: 100%;
+    padding: 60px 120px 60px 60px;
+}
+#contenedor_bonnie_ubicacion{
     border-radius: 0px 20px 20px 0px;
-    padding: 90px 120px 90px 60px;
-    background-color: var(--dark_alt);   
+    background-color: var(--dark_alt); 
 }
 /*FOOTER*/
 .btn-social-bonnie {
     margin-right: 5px;
+    margin-left: 5px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -445,7 +485,8 @@ body{
 font-family: 'Sanchez';
 font-style: normal;
 font-weight: 300;
-font-size: 14px;
+font-size: 13px;
+letter-spacing: 0.05rem;
 line-height: 15px;
 color: var(--light);
 }
