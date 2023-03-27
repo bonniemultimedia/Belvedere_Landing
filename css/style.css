@@ -269,6 +269,69 @@ body{
         border-color: var(--primary);
     }
 }
+@media screen and (max-width: 524px){
+    .altura_total{
+        min-height: 80vh;
+        width: 100%;
+    }
+    .section_padding{
+        padding-top: 60px;
+    }
+    .m_t_5{
+        margin-top: 50px;
+    }
+    .m_b_5{
+        margin-bottom: 50px;
+    }
+    .m_b_3{
+        margin-bottom: 30px;
+    }
+    .m_t_3{
+        margin-top: 30px;
+    }
+    .p_b_12{
+        padding-bottom: 120px;
+    }
+    .p_b_6{
+        padding-bottom: 60px;
+    }
+    .p_b_3{
+        padding-bottom: 30px;
+    }
+    /*TEXTO*/
+    .espacio_titulo{
+        letter-spacing: 0.6em !important;
+    }
+    .belvedere-title{
+        font-size: 20px;
+    }
+    .belvedere-subtitle{   
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.17em;      
+    }
+    .header-text{
+        font-size: 19px;
+        letter-spacing: 0.05em;  
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .belvedere-text{
+        font-size: 16px;
+    }
+    .carousel-urbanizacion-item{
+        width: 100% !important;
+        height: 233.61px !important;
+        border-radius: 10px !important;
+    }
+    #ubicacion_right_cont{
+        padding: 30px !important;
+        text-align: center;
+    }
+    #contenedor_bonnie_ubicacion{
+        border-radius: 0px 0px 10px 10px !important;
+    }
+}
 /*HOME*/
 #home{
     background-image: url("../img/background_home_1.svg");
@@ -309,11 +372,13 @@ body{
     background-image: url("../img/img_urbanizacion_carouel_1.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 #carousel_2{
     background-image: url("../img/img_urbanizacion_carouel_2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .carousel-urbanizacion-item{
     height: 462px;
@@ -366,7 +431,6 @@ body{
     transition: .5s;
 }
 .carousel-servicios-item{
-    height: 462px;
     width: 100%;
     height: 233.61px;
     border-radius: 10px;
@@ -376,7 +440,6 @@ body{
 .servicios-imagen-cont{
     margin-bottom: 20px;
 }
-
 #servicios_imagen_red_agua{
     background-image: url("../img/servicios_red_agua.jpg");
     background-size: cover;
